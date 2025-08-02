@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EMDR Tool</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Stage für Dot -->
+    <div id="stage">
+        <div id="dot"></div>
+    </div>
+
+    <!-- Control Buttons -->
+    <button id="startStop" class="control-btn">Start</button>
+
+    <!-- Hamburger -->
+    <button id="menuBtn" class="menu-btn">&#9776;</button>
+
+    <!-- Settings Menu -->
+    <div id="menu" class="hidden" aria-hidden="true">
+        <h2>Einstellungen</h2>
+        <label for="speedRange">Beats&nbsp;pro&nbsp;Minute: <span id="speedLabel">60</span></label>
+        <input type="range" id="speedRange" min="30" max="240" value="60">
+    </div>
+
+    <!-- Heartbeat Audio -->
+    <audio id="heartbeat" src="safe_heartbeat_deep-1.wav" preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
